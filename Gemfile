@@ -18,6 +18,11 @@ group :development, :test do
   gem 'rspec-rails', '2.13.1'
 end
 
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
